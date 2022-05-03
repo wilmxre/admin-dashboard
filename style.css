@@ -9,30 +9,23 @@
 }
 
 .container {
-  background-color: rgb(238, 121, 121);
   height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: repeat(5, 1fr);
 }
 
 .header {
   background-color: rgb(238, 220, 121);
-  width: var(--size);
-  height: var(--size);
+  grid-area: 1 / 2 / 2 / 3;
 }
 
 .left-sidebar {
   background-color: rgb(121, 238, 121);
-  width: var(--size);
-  height: var(--size);
+  grid-area: 1 / 1 / -1 / 2;
 }
 
-.projects {
+.content {
   background-color: rgb(121, 191, 238);
-  width: var(--size);
-  height: var(--size);
-}
-
-.right-sidebar {
-  background-color: rgb(121, 148, 238);
-  width: var(--size);
-  height: var(--size);
+  grid-area: 2 / 2 / -1 / -1;
 }
