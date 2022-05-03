@@ -26,6 +26,18 @@
 }
 
 .content {
-  background-color: rgb(121, 191, 238);
   grid-area: 2 / 2 / -1 / -1;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.projects {
+  background-color: rgb(121, 191, 238);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.right-sidebar {
+  background-color: rgb(121, 148, 238);
+  display: grid;
 }
