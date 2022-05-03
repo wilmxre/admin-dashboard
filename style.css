@@ -1,5 +1,38 @@
-:root {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --size: 25%;
+}
+
+.container {
+  background-color: rgb(238, 121, 121);
+  height: 100vh;
+}
+
+.header {
+  background-color: rgb(238, 220, 121);
+  width: var(--size);
+  height: var(--size);
+}
+
+.left-sidebar {
+  background-color: rgb(121, 238, 121);
+  width: var(--size);
+  height: var(--size);
+}
+
+.projects {
+  background-color: rgb(121, 191, 238);
+  width: var(--size);
+  height: var(--size);
+}
+
+.right-sidebar {
+  background-color: rgb(121, 148, 238);
+  width: var(--size);
+  height: var(--size);
 }
