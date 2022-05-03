@@ -23,6 +23,42 @@
 .left-sidebar {
   background-color: rgb(121, 238, 121);
   grid-area: 1 / 1 / -1 / 2;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 16px;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  gap: 16px;
+}
+
+.left-sidebar ul {
+  list-style: none;
+  margin-left: 8px;
+}
+
+.li-item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  gap: 16px;
+}
+
+.left-sidebar li {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.li-item img {
+  height: 30px;
+  width: auto;
 }
 
 .content {
