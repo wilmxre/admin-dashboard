@@ -18,6 +18,54 @@
 .header {
   background-color: rgb(238, 220, 121);
   grid-area: 1 / 2 / 2 / 3;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.header .top-row {
+  display: flex;
+  align-items: center;
+}
+
+.left-side {
+  display: flex;
+  margin: 24px;
+  gap: 24px;
+}
+
+.left-side img {
+  height: 30px;
+  width: auto;
+}
+
+.left-side div {
+  width: 600px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+  margin: 24px 24px 24px auto;
+  gap: 32px;
+}
+
+.right-side img {
+  height: 30px;
+  width: auto;
+}
+
+.right-side img:nth-child(2) {
+  height: 50px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.right-side span {
+  font-weight: 600;
+  font-size: 1.3rem;
 }
 
 .left-sidebar {
