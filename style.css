@@ -1,3 +1,7 @@
+/* ================
+universal-selectors
+================ */
+
 * {
   margin: 0;
   padding: 0;
@@ -8,12 +12,17 @@
   --size: 25%;
 }
 
+
 .container {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: repeat(5, 1fr);
 }
+
+/* ================
+    H E A D E R
+================ */
 
 .header {
   background-color: rgb(238, 220, 121);
@@ -22,10 +31,14 @@
   grid-template-rows: 1fr 1fr;
 }
 
+/* --- Top Row --> */
+
 .header .top-row {
   display: flex;
   align-items: center;
 }
+
+/* --- Left Side --> */
 
 .left-side {
   display: flex;
@@ -45,6 +58,9 @@
   border-radius: 25px;
 }
 
+/* <-- Left Side --- */
+
+/* --- Right Side --> */
 .right-side {
   display: flex;
   align-items: center;
@@ -68,6 +84,13 @@
   font-size: 1.3rem;
 }
 
+/* <-- Right Side -- */
+/* <-- Top Row --- */
+
+
+/* ==========================
+    L E F T  S I D E B A R
+=========================== */
 .left-sidebar {
   background-color: rgb(121, 238, 121);
   grid-area: 1 / 1 / -1 / 2;
@@ -86,6 +109,8 @@
   padding: 8px;
   gap: 16px;
 }
+
+/* --- List --> */
 
 .left-sidebar ul {
   list-style: none;
@@ -108,6 +133,8 @@
   height: 30px;
   width: auto;
 }
+
+/* <-- List --- */
 
 .content {
   grid-area: 2 / 2 / -1 / -1;
