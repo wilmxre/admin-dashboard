@@ -165,17 +165,68 @@ universal-selectors
 
 /* <-- List --- */
 
+/* ==================
+    C O N T E N T
+================== */
 .content {
   grid-area: 2 / 2 / -1 / -1;
   display: grid;
   grid-template-columns: 3fr 1fr;
 }
 
+/* ==============
+    C A R D S
+============== */
 .projects {
   background-color: rgb(121, 191, 238);
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+.card-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  width: 75%;
+  height: 75%;
+  border-radius: 12px;
+  gap: 8px;
+  background-color: white;
+  background: linear-gradient(90deg, rgba(115, 115, 212, 1) 3%, rgba(255, 255, 255, 1) 3%);
+}
+
+.card h3 {
+  margin-top: 24px;
+  margin-left: 24px;
+}
+
+.card span {
+  margin: 0 24px;
+  flex: 1;
+}
+
+.action-row {
+  display: flex;
+  justify-content: end;
+  margin-right: 24px;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.action-row img {
+  height: 25px;
+  width: auto;
+  cursor: pointer;
+}
+
 
 .right-sidebar {
   background-color: rgb(121, 148, 238);
