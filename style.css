@@ -31,27 +31,27 @@ universal-selectors
   grid-template-rows: 1fr 1fr;
 }
 
-/* --- Top Row --> */
-
-.header .top-row {
+.header .top-row,
+.header .bottom-row {
   display: flex;
-  align-items: center;
 }
 
+/* --- Top Row --> */
 /* --- Left Side --> */
 
 .left-side {
   display: flex;
   margin: 24px;
   gap: 24px;
+  align-items: center;
 }
 
-.left-side img {
+.top-row .left-side img {
   height: 30px;
   width: auto;
 }
 
-.left-side div {
+.top-row .left-side div {
   width: 600px;
   height: 30px;
   background-color: #fff;
@@ -79,7 +79,7 @@ universal-selectors
   border-radius: 50%;
 }
 
-.right-side span {
+.header span {
   font-weight: 600;
   font-size: 1.3rem;
 }
@@ -87,6 +87,35 @@ universal-selectors
 /* <-- Right Side -- */
 /* <-- Top Row --- */
 
+/* --- Bottom Row --> */
+/* --- Left Side --> */
+
+.bottom-row .left-side img {
+  height: 75px;
+  border-radius: 50%;
+}
+
+.bottom-row span {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+/* <-- Left Side --- */
+
+/* --- Right Side --> */
+
+.right-side button {
+  all: unset;
+  cursor: pointer;
+  padding: 8px;
+  background-color: teal;
+  width: 70px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+/* <-- Right Side --- */
+/* <--- Bottom Row --- */
 
 /* ==========================
     L E F T  S I D E B A R
