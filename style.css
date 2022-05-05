@@ -57,12 +57,14 @@ universal-selectors
   cursor: pointer;
 }
 
-.top-row .left-side div {
+.top-row .left-side input {
+  all: unset;
   width: clamp(200px, 50%, 600px);
   height: 30px;
   background-color: var(--content-color);
   border-radius: 25px;
   cursor: text;
+  padding: 0 8px;
 }
 
 /* <-- Left Side --- */
@@ -403,7 +405,7 @@ universal-selectors
     grid-template-rows: 100px;
   }
 
-  .top-row .left-side div {
+  .top-row .left-side input {
     display: none;
   }
 
