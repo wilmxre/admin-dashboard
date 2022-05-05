@@ -183,6 +183,7 @@ universal-selectors
   grid-template-columns: 1fr 1fr;
 }
 
+/* --- Cards --> */
 .card-container {
   width: 100%;
   height: 100%;
@@ -194,7 +195,6 @@ universal-selectors
 .card {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-evenly; */
   width: 75%;
   height: 75%;
   border-radius: 12px;
@@ -227,8 +227,56 @@ universal-selectors
   cursor: pointer;
 }
 
+/* <-- Cards --- */
 
+/* =============================
+    R I G H T  S I D E B A R
+============================= */
 .right-sidebar {
   background-color: rgb(121, 148, 238);
   display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+.right-sidebar .item-top,
+.right-sidebar .item-bottom {
+  width: 70%;
+  height: 75%;
+  background-color: #fff;
+  border-radius: 12px;
+  margin: 0 auto;
+}
+
+.right-sidebar .item-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 8px;
+}
+
+.item-top .item {
+  padding: 8px;
+}
+
+.item-top .item .title {
+  font-weight: bold;
+}
+
+.item-top .line-break {
+  height: 1px;
+  width: 80%;
+  background-color: black;
+}
+
+.item-top .item .text {
+  font-size: .8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
 }
