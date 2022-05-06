@@ -385,7 +385,7 @@ universal-selectors
 
 @media only screen and (max-width: 700px) {
   .right-sidebar {
-    visibility: hidden;
+    display: none;
   }
 
   .projects {
