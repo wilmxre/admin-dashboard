@@ -214,7 +214,7 @@ universal-selectors
 .card {
   display: flex;
   flex-direction: column;
-  width: clamp(350px, 80%, 600px);
+  width: clamp(260px, 80%, 600px);
   height: clamp(150px, 100%, 250px);
   border-radius: 12px;
   gap: 8px;
@@ -411,5 +411,15 @@ universal-selectors
 
   .left-side {
     gap: 0;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .projects {
+    grid-template-columns: 1fr;
   }
 }
